@@ -1,4 +1,5 @@
 *.log
+.env
 lenv
 venv
 wenv
