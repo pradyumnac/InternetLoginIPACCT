@@ -5,7 +5,7 @@ import requests
 from dotenv import load_dotenv
 load_dotenv()
 
-logging.basicConfig(filename='run.log',filemode='a', format = '%(name)s - %(asctime)s - %(message)s')
+logging.basicConfig(filename='run.log',filemode='a', format = '%(name)s - %(asctime)s - %(message)s', level= logging.INFO)
 
 url = "http://10.254.254.71/0/up/"
 logged_in_str = "Your Internet connection is configured properly."
@@ -32,3 +32,7 @@ if __name__=="__main__":
     if not check_logged_in():
         logging.info("logging in ..")
         login()
+        if not check_logged_in():
+            logging.error(" Login Failed!")
+        else:
+            logging.info("Logging Success!")
