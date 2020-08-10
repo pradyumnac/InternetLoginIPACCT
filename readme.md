@@ -11,7 +11,7 @@ Login Script for IP ACCT Solution based Broadband Login
         source lenv/bin/activate.sh;
         pip install -r requirements.txt;
         `
-    * Edit run.sh to refect your project path
+    * <s>Edit run.sh to refect your project path</s> (**No Longer Required**)
     * Rename `sample.env` to `.env`. Edit your login credentials inside the double quotes
     * Execute `./run.sh` 
     * Set crontab `crontab -e` to execute script every 15 mins [Syntax](https://crontab.guru/every-15-minutes). Change as per requirements in command below:
