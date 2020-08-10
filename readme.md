@@ -13,5 +13,5 @@ Login Script for IP ACCT Solution based Broadband Login
         `
     * Edit run.sh to refect your project path
     * Execute `./run.sh` 
-    * Set crontab to :
-        * ./<Path>/run.sh
+    * Set crontab `crontab -e` to execute script every 15 mins. CHnage as per requirements in command below:
+        * */15 * * * * ./**Project-Path**/run.sh
