@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 project_path = os.environ['project_path']
-logging.basicConfig(filename=project_path+os.path.sep+'run.log',filemode='a', format = '%(name)s - %(asctime)s - %(message)s', level= logging.INFO)
+logging.basicConfig(filename=project_path+os.path.sep+"log"+os.path.sep+'run.log',filemode='a', format = '%(name)s - %(asctime)s - %(message)s', level= logging.INFO)
 
 url = "http://10.254.254.71/0/up/"
 logged_in_str = "Your Internet connection is configured properly."
